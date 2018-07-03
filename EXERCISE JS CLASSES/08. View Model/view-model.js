@@ -2,7 +2,6 @@ class Textbox {
     constructor(selector, regex) {
         this.selector = selector;
         this.value = '';
-        this.tetsprop = '123';
         this.elements = $(this.selector);
         this._invalidSymbols = regex;
         $(this.elements).on('input', function () {
